@@ -1,0 +1,258 @@
+:host {
+  display: block;
+  min-height: 100%;
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(360px, 0.9fr) 1.1fr;
+  background: #fff;
+}
+
+.brand-panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 46px clamp(36px, 7vw, 100px);
+  color: #fff;
+  background: linear-gradient(145deg, #4745a8 0%, #5554c5 54%, #7274dd 100%);
+}
+
+.brand-lockup,
+.mobile-brand {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font: 800 24px 'Manrope', sans-serif;
+  letter-spacing: -1px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #5352bd;
+  background: #fff;
+}
+
+.brand-icon mat-icon {
+  width: 23px;
+  height: 23px;
+  font-size: 23px;
+}
+
+.brand-light {
+  color: #b6baff;
+}
+
+.brand-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 470px;
+  margin: auto 0;
+  padding: 70px 0;
+}
+
+.eyebrow,
+.form-kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.65px;
+}
+
+.eyebrow {
+  color: #d3d4ff;
+}
+
+.brand-copy h1 {
+  margin: 22px 0 18px;
+  font: 700 clamp(38px, 4vw, 54px)/1.16 'Manrope', sans-serif;
+  letter-spacing: -2.2px;
+}
+
+.brand-copy p {
+  max-width: 380px;
+  color: #e0e0ff;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.brand-footer {
+  position: relative;
+  z-index: 1;
+  color: #d0d1ff;
+  font-size: 12px;
+}
+
+.orb {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.orb-one {
+  width: 510px;
+  height: 510px;
+  top: 21%;
+  right: -270px;
+}
+
+.orb-two {
+  width: 360px;
+  height: 360px;
+  top: 31%;
+  right: -195px;
+}
+
+.form-panel {
+  display: grid;
+  place-items: center;
+  padding: 48px 28px;
+}
+
+.form-wrap {
+  width: min(100%, 410px);
+}
+
+.welcome-mark {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 28px;
+  border-radius: 16px;
+  color: #5554c5;
+  background: #f0f0ff;
+}
+
+.form-kicker {
+  margin: 0 0 8px;
+  color: #7477a0;
+}
+
+.form-wrap h2 {
+  margin: 0;
+  font: 700 29px 'Manrope', sans-serif;
+  letter-spacing: -1px;
+}
+
+.form-subtitle {
+  margin: 9px 0 30px;
+  color: #81869a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+form {
+  display: grid;
+  gap: 4px;
+}
+
+.submit-button {
+  height: 50px;
+  margin-top: 8px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.button-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+.submit-button mat-icon {
+  margin-left: 9px;
+}
+
+.submit-button mat-spinner {
+  margin: auto;
+}
+
+.error-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 0 5px;
+  padding: 11px 12px;
+  border-radius: 8px;
+  color: #a43838;
+  background: #fff0ef;
+  font-size: 13px;
+}
+
+.error-banner mat-icon {
+  flex: none;
+  width: 19px;
+  height: 19px;
+  font-size: 19px;
+}
+
+.switch-mode {
+  margin: 24px 0 0;
+  color: #74798b;
+  text-align: center;
+  font-size: 13px;
+}
+
+.switch-mode a {
+  margin-left: 4px;
+  color: #5554c5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form-legal {
+  margin: 43px 0 0;
+  color: #a0a4b1;
+  text-align: center;
+  font-size: 11px;
+}
+
+.mobile-brand {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .auth-shell {
+    display: block;
+  }
+
+  .brand-panel {
+    display: none;
+  }
+
+  .form-panel {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 24px;
+  }
+
+  .mobile-brand {
+    display: flex;
+    margin-bottom: 42px;
+    color: #383b55;
+  }
+
+  .mobile-brand > span:last-child {
+    color: #5554c5;
+  }
+
+  .brand-icon {
+    color: #fff;
+    background: #5554c5;
+  }
+
+  .form-wrap h2 {
+    font-size: 27px;
+  }
+}

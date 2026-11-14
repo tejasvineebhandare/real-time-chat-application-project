@@ -1,0 +1,11 @@
+node_modules/
+.tools/
+dist/
+.angular/
+.env
+.env.*
+!.env.example
+server/uploads/*
+!server/uploads/.gitkeep
+coverage/
+.DS_Store

@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: #242a3a;
+  background: #f6f7fb;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.mat-mdc-form-field {
+  width: 100%;
+}
